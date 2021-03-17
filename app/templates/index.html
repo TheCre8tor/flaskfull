@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %} Home {% endblock %}
+
+{% block logout %}
+    <li class="nav-item">
+        <a class="nav-link" href="{{ url_for('Logout') }}">Logout</a>
+    </li>
+{% endblock %}
+
+{% block body %} 
+    <h1>Welcome to flask simple application</h1>
+    <p>This is a simple flask web application</p>
+
+    <h2>Welcome Mr. {{user}}</h2>
+{% endblock %}
